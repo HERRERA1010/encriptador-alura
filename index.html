@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/d20969dd14.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/imagenes/favicon.ico" />
+   
+    <title>Encriptador-Alura</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <a href="index.html"><i class="fa-solid fa-user-secret logo" alt="logo"></i></a>
+            <a id="nombreLogo" href="#">ENCRIPTADOR</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="contenedor">
+        <section>
+            <textarea class="text-area text-area-estilos estilos-inputs" placeholder="ingrese texto aqui" cols="30"
+                rows="10"></textarea>
+            <div>
+                <h6 id="advertencia" >Solo letras minusculas y sin acentos.</h6>
+            </div>
+            <div>
+                <button class="encriptar-button btn-encriptar estilos-botones" onclick="btnEncriptar()" ><i class="fa-solid fa-lock"></i>Encriptar</button>
+                
+                <button class="desencriptar-button btn-desencriptar estilos-botones" onclick="btnDesencriptar()"><i
+                        class="fa-solid fa-lock-open"></i>Desencriptar</button>
+            </div>
+        </section>
+        <section id="caja-respuesta">
+            <textarea class="ouput-respuesta mensaje estilos-inputs" type="text" id="input" cols="20" rows="10"></textarea>
+            <div>
+                <button class="estilos-botones btn-copiar" id="copy" onclick="copiarAlPortapapeles()" >Copiar</button>
+            </div>
+        </section>
+    </div>
+    </main>
+
+    <footer> 
+        <div>
+          <h2 class="footer__headline">Derechos</h2>
+          <ul class="footer__list">
+            <li><a id="links-styles" href="https://www.aluracursos.com/">Alura latam</a></li>
+          </ul>
+        </div>
+      
+        <div>
+          <h2 class="footer__headline">Redes</h2>
+          <ul class="footer__list">
+            <li><a target="_blank" id="links-styles" href="https://github.com/fha1010"><i class="fa-brands fa-square-github"></i>Github</a></li>
+            <li><a target="_blank" id="links-styles" href="https://www.linkedin.com/in/ferm%C3%ADn-herrera-ancona-6065311b8/"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+}
+/*ESTILOS GENERALES*/
+
+
+body{
+    background-color:#2b2b2b;
+
+}
+/*------> ESTILOS NAV <--------*/
+#nav{
+    background-color:#2C3333 ;
+}
+
+a{
+ text-decoration: none;
+ list-style: none;   
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 35px;
+    color: #ffffff;
+    margin:20px 2%;
+}
+
+#nombreLogo{
+   color: #ffffff;
+   font-family: 'Audiowide', cursive;
+   font-weight: 500;
+   font-size: 2rem;
+   margin: 10px 0px 10px 20px ;
+}
+
+/*------> ESTILOS DE CAJAS <--------*/ 
+
+.main{
+    margin: 30px auto;
+    width: 700px;
+    display: flex;
+}
+
+.contenedor{
+    display: flex;
+    align-content: space-around;
+}
+
+.estilos-inputs{
+    background-color:#2b2b2b;
+    color: #ffffff;
+}
+
+.text-area-estilos{
+    height: 250px;
+    width: 400px;
+    margin-right: 20px;
+    border: none;
+    text-transform: lowercase;
+}
+
+    ::placeholder { color: #ffffff;}
+     .text-area:focus{
+        outline: none;
+     }
+
+     #advertencia{
+        color: #ffffff;
+        font-family: 'Audiowide', cursive;
+        font-weight: lighter;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+     }  
+
+.ouput-respuesta{
+    margin-top: 10px;
+    height: 240px;
+    width: 250px;
+    border: 1px solid #384545;
+    background-image: url(../imagenes/mensajeArea.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#caja-respuesta{
+    color: #ffffff;
+}
+
+/*------> ESTILOS DE BOTONES <------*/
+
+.estilos-botones{
+    width: 180px;
+    height: 52px;
+    background-color:#2E4F4F;
+    border: #384545 0.2px solid;
+    border-radius: 5px;
+    font-family: 'Audiowide', cursive;
+    font-weight: 100;
+    font-size:  17px;;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.encriptar-button{
+    margin-right: 15px;
+}
+
+.btn-copiar{
+    margin: 27px 0px 0px 0px ;
+}
+
+.fa-lock{
+    font-size: 20px;
+    margin: 5px;   
+    color: #ffffff; 
+}
+
+.fa-lock-open{
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+/******FOOTER*******/
+
+.fa-square-github, .fa-linkedin{
+    font-size: 20px;
+    color: #ffffff ;
+    margin: 5px 5px 0px 0px;
+}
+
+footer {
+    display: flex;
+    justify-content:space-evenly;
+    background-color: #2C3333;
+    height: 180px;
+  }
+  
+  .footer__headline {
+    font-weight: lighter;
+    margin: 20px auto;
+    color: #ffffff;
+    font-family: 'Audiowide', cursive;
+    
+  }
+  
+  .footer__list {
+    font-family: 'Audiowide', cursive;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  #links-styles{
+    color: #ffffff;
+  }
+
+/****MEDIA QUERYS*****/
+
+@media screen and (max-width: 768px) {
+              
+    .contenedor{
+        display: block;
+        margin: auto;
+    }
+    .main{
+        width: 100%;
+    }
+
+    .ouput-respuesta{
+      width: 100%;
+        margin-left:auto;
+    }
+
+    .text-area-estilos{
+        height: 250px;
+        width: 100%;
+        margin: 20px;
+    }
+    
+    #nombreLogo{
+        color: #ffffff;
+        font-family: 'Audiowide', cursive;
+        font-weight: 500;
+        font-size: 1rem;
+        margin: 10px 0px 10px 20px ;
+     }
+
+     .estilos-botones{
+        width: 120px;
+        height: 52px;
+        background-color:#2E4F4F;
+        border: #384545 0.2px solid;
+        border-radius: 5px;
+        font-family: 'Audiowide', cursive;
+        font-weight: 100;
+        font-size:  10px;
+        
+        
+    }
+
+    .fa-lock{
+        font-size: 10px;
+        margin: 5px; 
+        color: #ffffff; 
+    }
+    
+    .fa-lock-open{
+        font-size: 10px;
+        margin: 5px;
+    }
+
+    .main{
+        margin: 30px auto;
+        width: 100%;
+        display: block;
+    }
+
+    }
+
+
+
+
